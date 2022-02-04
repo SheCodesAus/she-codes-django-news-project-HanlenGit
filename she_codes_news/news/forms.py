@@ -10,6 +10,6 @@ class StoryForm(ModelForm):
         widgets = {
             'pub_date': forms.DateInput(format=('%m/%d/%Y'),
 attrs={'class':'form-control', 'placeholder':'Select a date',
-'type':'date'})
-}
+'type':'date'}),
+    }
   

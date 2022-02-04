@@ -20,15 +20,19 @@ h1 {
     text-decoration: none;
     font-size: 4rem;
     margin: 0;
+    color: rebeccapurple
+
 }
 
 h2 {
    font-family: 'Montserrat Subrayada', sans-serif; 
+   color: rebeccapurple
 }
 
 h3 {
     font-size: 2rem;
     margin: 0;
+    color: rebeccapurple;
 }
 
 #header-text {
