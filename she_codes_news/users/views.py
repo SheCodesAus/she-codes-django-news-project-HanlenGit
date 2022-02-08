@@ -8,7 +8,7 @@ from .forms import CustomUserCreationForm
 
 class CreateAccountView(CreateView):
     form_class = CustomUserCreationForm
-    success_url = reverse_lazy('login')
+    success_url = reverse_lazy('sign in')
     template_name = 'users/createAccount.html'
 
 class UserProfileView(generic.DetailView): #django thing

@@ -23,14 +23,11 @@ h1 {
     margin: 0;
     color: #8246af;
     text-align: center;
+    justify-content: center;
 }
 
-.glowup {
-    font-family: "Satisfy", Sans-serif;
-    font-size: 1.5em;
-    font-weight: 400;
-    color-adjust: #ffba00;
-    text-shadow: 0 0 3px #fff, 0 0 5px #fff, 0 0 10px #fff, 0 0 21px #ffa300, 0 0 41px #ffa300, 0 0 46px #ffa300, 0 0 50px #ffa300, 0 0 75px #ffa300;
+h1 span {
+    color-adjust: #ffba00; ;
 }
 
 h2 {
@@ -46,7 +43,9 @@ h3 {
 }
 
 h4 {
-    color: #8246af;
+    color: rgb(233, 52, 250);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
 }
 
 #header-text {
@@ -56,10 +55,30 @@ h4 {
 
 nav {
     flex-basis: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    display: inline;
+    align-items: center;
+
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #8246af;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
 
 a {
     margin: 2px;
