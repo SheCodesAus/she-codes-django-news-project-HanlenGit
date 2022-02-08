@@ -1,12 +1,11 @@
 from django.urls import path
-from .views import CreateAccountView
-from .views import UserView
+from .views import CreateAccountView, UserProfileView
 
 app_name = 'users'
 
 urlpatterns = [
     path('create-account/', CreateAccountView.as_view(),
 name='createAccount'),
-    path('user-profile/', UserView.as_view(),
-name='user-Profile'),
+    path('<int:pk>/', UserProfileView.as_view(),
+name='user-profile'),
 ]

@@ -2,13 +2,11 @@
 {% load static %}
 
 {% block stylesheets %}
-    <link rel='stylesheet' type="text/css" href="{% static 'news/styles.css' %}">
-{% endblock %}
 
+    <link rel='stylesheet' type="text/css" href="{% static 'news/styles.css' %}">
+{% endblock %} 
 {% block content %}
 
-<div id="story-wrapper">
-    <h2>Hi {% user.name %}</h2>
-</div>
+<h4>Hi {{ author.username }} Welcome Back</h4>
 
-{% endblock %}
+{% endblock %} 

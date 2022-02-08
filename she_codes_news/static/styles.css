@@ -9,6 +9,7 @@ header {
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #000;
+    background-color: white;
 }
 
 img {
@@ -18,21 +19,34 @@ img {
 h1 {
     font-family: 'Montserrat Subrayada', sans-serif;
     text-decoration: none;
-    font-size: 4rem;
+    font-size: 2rem;
     margin: 0;
-    color: rebeccapurple;
+    color: #8246af;
+    text-align: center;
+}
 
+.glowup {
+    font-family: "Satisfy", Sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    color-adjust: #ffba00;
+    text-shadow: 0 0 3px #fff, 0 0 5px #fff, 0 0 10px #fff, 0 0 21px #ffa300, 0 0 41px #ffa300, 0 0 46px #ffa300, 0 0 50px #ffa300, 0 0 75px #ffa300;
 }
 
 h2 {
    font-family: 'Montserrat Subrayada', sans-serif; 
-   color: black;
+   color: #8246af;
 }
 
 h3 {
     font-size: 2rem;
     margin: 0;
-    color: black;
+    color: #8246af;
+
+}
+
+h4 {
+    color: #8246af;
 }
 
 #header-text {

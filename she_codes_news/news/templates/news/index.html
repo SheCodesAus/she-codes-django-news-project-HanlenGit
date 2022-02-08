@@ -3,13 +3,13 @@
 
 {% block stylesheets %}
 <link rel="stylesheet" type="text/css" href="{% static 'news/styles.css' %}">
-<a href="{% url 'news:newStory' %}">Write New Story</a>
+
 {% endblock %}
 
 {% block content %}
     
-    <h2>Latest News</h2>
-xs
+    <h2 class="glowup">Latest News</h2>
+
     <div id="latest-stories">
         {% if latest_stories %}
             {% for story in latest_stories %}
@@ -20,6 +20,8 @@ xs
         {% endif %}
     </div>
 
+    <a href="{% url 'news:newStory' %}">Write New Story</a>
+    
     <div id="all-stories">
         {% if all_stories %}
             {% for story in all_stories %}
