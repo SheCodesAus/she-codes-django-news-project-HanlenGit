@@ -3,6 +3,7 @@ from django.db import models
 
 
 
+
 class NewsStory(models.Model):
     title = models.CharField(max_length=200)
     # author = models.CharField(max_length=200)
@@ -12,6 +13,11 @@ class NewsStory(models.Model):
     )
     pub_date = models.DateTimeField()
     content = models.TextField()
+
+    class Meta:
+        ordering = ['-pub_date']
+
+
 
 class ProjectProfile(models.Model):
     project_name = models.CharField(max_length=100)
@@ -24,6 +30,8 @@ class ProjectProfile(models.Model):
 # class Category(models.Model):
 #     category = models.CharField(max_length=200, choices = 'categories')
 #     choices = 'Program', 'Annoucenments'
+
+
 
 
 
