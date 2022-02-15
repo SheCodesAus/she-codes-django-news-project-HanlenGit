@@ -68,14 +68,15 @@ h1 {
 }
 
 h2 {
-   font-family: 'Montserrat Subrayada', sans-serif; 
-   color: #8246af;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #8246af;
 }
 
 h3 {
     font-size: 2rem;
     margin: 0;
     color: #8246af;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 
@@ -83,18 +84,35 @@ h4 {
     color: rgb(233, 52, 250);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: larger;
-    padding-top: -100px;
+    margin-top: -1px;
 }
 
-h6 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.author-header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
-    justify-content: center;
     font-size: x-large;
+    margin-top: 0;
+    color: #8246af;
 }
 #header-text {
     flex-basis: 80%;
     display: flex;
+}
+
+.form-header {
+    font-family: 'Montserrat Subrayada', sans-serif;
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 0;
+    color: #8246af;
+    display: flex; 
+    justify-content: center;
+}
+
+.form-item {
+    color: whitesmoke;
+
+
 }
 
 nav {
@@ -118,7 +136,7 @@ ul {
   
   li a {
     display: block;
-    color: white;
+    color: #FFA300;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;

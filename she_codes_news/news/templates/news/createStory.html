@@ -7,13 +7,13 @@
 
 {% block content %}
 
-<h6> Submit a New Story! <h6>
+<h6 class="form-header"> Submit a New Story! <h6>
 <section class="form-section">    
     <form class="form-item" action="" method="post">
         {% csrf_token %}
         {{ form.as_p }}
         <input class="form-button" type="submit" value="submit">
-            <button> Submit </button>
+
     </form>
 
 {% endblock %}
