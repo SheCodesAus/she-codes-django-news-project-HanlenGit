@@ -7,10 +7,13 @@
 
 {% block content %}
 
-<form class="add-story-form" action="" method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="submit">
-</form>
+<h6> Submit a New Story! <h6>
+<section class="form-section">    
+    <form class="form-item" action="" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input class="form-button" type="submit" value="submit">
+            <button> Submit </button>
+    </form>
 
 {% endblock %}
