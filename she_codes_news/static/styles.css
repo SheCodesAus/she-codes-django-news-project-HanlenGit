@@ -11,9 +11,12 @@ header {
     border-bottom: 1px solid #000;
     background-color: white;
 }
+.header-text {
+    justify-content: center;
+}
 
 img {
-    filter: grayscale(100%);
+   
 }
 
 h1 {
@@ -22,12 +25,7 @@ h1 {
     font-size: 2rem;
     margin: 0;
     color: #8246af;
-    text-align: center;
-    justify-content: center;
-}
-
-h1 span {
-    color-adjust: #ffba00; ;
+    display: middle;
 }
 
 h2 {
@@ -46,6 +44,7 @@ h4 {
     color: rgb(233, 52, 250);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: larger;
+    padding-top: -100px;
 }
 
 #header-text {

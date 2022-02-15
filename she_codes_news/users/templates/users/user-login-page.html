@@ -9,16 +9,17 @@
 {% block content %}
 
 <div>
-    <h2>Author Profile</h2>
+    <h2>My Profile</h2>
     <img href='#'>image to be added</img>
-    <p> lots of stuff about the author that they want to share with the public.
+    <p> lots of stuff about yourself that you want to share on the public profile page
+        We will also make this functional to update as well.
     </p>
-    <button>Message Author</button>
+    <button>Update Profile</button>
 
 
 </div>
     
-    <h3>Author Stories</h3>
+    <h3>Your Stories</h3>
 
 <div id="all-stories">
         {% if all_stories %}
@@ -28,6 +29,15 @@
         {% else %}
             <p>No stories are available.</p>
         {% endif %}
+        
+        <form method="post">{% csrf_token %}
+            <p>Are you sure you want to delete "{{ object }}"?</p>
+            {{ form }}
+            <input type="submit" value="Confirm">
+        </form>
 </div>
 
+
+<a href="{% url 'news:newStory' %}"><button>Write New Story</button></a>
+    
 {% endblock %}

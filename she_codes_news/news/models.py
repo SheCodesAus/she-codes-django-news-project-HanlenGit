@@ -12,3 +12,23 @@ class NewsStory(models.Model):
     )
     pub_date = models.DateTimeField()
     content = models.TextField()
+
+class ProjectProfile(models.Model):
+    project_name = models.CharField(max_length=100)
+    artist = models.CharField(max_length=100)
+    is_favorite = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.project_name
+
+# class Category(models.Model):
+#     category = models.CharField(max_length=200, choices = 'categories')
+#     choices = 'Program', 'Annoucenments'
+
+
+
+
+
+
+
+     
