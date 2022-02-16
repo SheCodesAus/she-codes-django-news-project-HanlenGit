@@ -11,16 +11,21 @@
 }
 
 #latest-stories {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 1px 1px;
     grid-template-areas: "left-1 right-1" "left-1 right-2" "left-1 right-3";
-    max-height: 500px;
+    max-height: 500px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 #story-card-1 {
-    grid-area: left-1;
+    /* grid-area: left-1; */
+    flex-basis: 32%;
+    flex-grow: 1;
 }
 
 #story-card-2 {
