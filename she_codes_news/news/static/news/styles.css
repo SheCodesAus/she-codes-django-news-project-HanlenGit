@@ -1,4 +1,4 @@
-.story-card {
+/* .story-card {
     margin: 2px;
     border: 1px solid #000;
     padding: 5px;
@@ -20,7 +20,7 @@
     /* display: flex;
     flex-wrap: wrap;
     justify-content: space-between; */
-}
+/* }
 
 #story-card-1 {
     grid-area: left-1;
@@ -36,8 +36,8 @@
     grid-area: right-2;
 }
 
-#story-card-4 {
-    grid-area: right-3;
+#story-card-4 { */
+    /* grid-area: right-3;
 }
 
 #story-card-2 a,
@@ -65,8 +65,8 @@
 #story-card-3 img,
 #story-card-4 img {
     width: 33%;
-    height: 100%;
-    margin-right: 5px;
+    height: 100%; */
+    /* margin-right: 5px;
 }
 
 #all-stories {
@@ -90,10 +90,46 @@
     margin: 0 0 10px 10px;
     width: 50%;
 }
+ */ 
 
-.wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
+ * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
   }
