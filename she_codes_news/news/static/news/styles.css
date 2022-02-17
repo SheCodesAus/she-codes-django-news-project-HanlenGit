@@ -78,6 +78,7 @@
 #all-stories .story-card {
     flex-basis: 32%;
     flex-grow: 1;
+    flex-direction: column;
 }
 
 #story-content {
@@ -89,3 +90,10 @@
     margin: 0 0 10px 10px;
     width: 50%;
 }
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
