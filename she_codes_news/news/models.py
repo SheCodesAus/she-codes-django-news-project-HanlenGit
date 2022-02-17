@@ -13,6 +13,7 @@ class NewsStory(models.Model):
         on_delete=models. CASCADE
     )
     pub_date = models.DateTimeField()
+    
     content = models.TextField()
     image = models.URLField(null=True, blank=True)
 
