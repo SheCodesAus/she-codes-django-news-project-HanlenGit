@@ -9,7 +9,7 @@ header {
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #000;
-    background-color: white;
+    background-color: pink;
 }
 .header-text {
     justify-content: center;
@@ -75,7 +75,7 @@ h2 {
 h3 {
     font-size: 2rem;
     margin: 0;
-    color: #8246af;
+    color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
