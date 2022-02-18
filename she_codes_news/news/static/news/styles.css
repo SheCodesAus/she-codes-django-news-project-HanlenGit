@@ -20,7 +20,7 @@
     /* display: flex;
     flex-wrap: wrap;
     justify-content: space-between; */
-}
+/* } */
 
 #story-card-1 {
     grid-area: left-1;
@@ -89,4 +89,4 @@
     float: right;
     margin: 0 0 10px 10px;
     width: 50%;
-} */
+} 
