@@ -11,6 +11,7 @@ class StoryForm(ModelForm):
             'pub_date': forms.DateInput(format=('%m/%d/%Y'),
 attrs={'class':'form-control', 'placeholder':'Select a date',
 'type':'date'}),
-    }
+
+}
   
   
