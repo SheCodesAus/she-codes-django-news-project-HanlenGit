@@ -1,4 +1,4 @@
-/* .story-card {
+.story-card {
     margin: 2px;
     border: 1px solid #000;
     padding: 5px;
@@ -20,7 +20,7 @@
     /* display: flex;
     flex-wrap: wrap;
     justify-content: space-between; */
-/* }
+}
 
 #story-card-1 {
     grid-area: left-1;
@@ -36,8 +36,8 @@
     grid-area: right-2;
 }
 
-#story-card-4 { */
-    /* grid-area: right-3;
+#story-card-4 { 
+    grid-area: right-3;
 }
 
 #story-card-2 a,
@@ -65,8 +65,8 @@
 #story-card-3 img,
 #story-card-4 img {
     width: 33%;
-    height: 100%; */
-    /* margin-right: 5px;
+    height: 100%;
+    margin-right: 5px;
 }
 
 #all-stories {
@@ -90,4 +90,3 @@
     margin: 0 0 10px 10px;
     width: 50%;
 }
- */ 
