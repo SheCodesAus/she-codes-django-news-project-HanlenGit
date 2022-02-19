@@ -24,6 +24,7 @@ class NewsStory(models.Model):
         ('NEWS', 'News'),
         ('PROGRAM', 'Program'),
         ('ANNOUNCEMENTS', 'Announcements'),
+        ('CAREERS', 'Careers'),
     )
 
     category = models.CharField(max_length=200, choices = categories, default='news')
