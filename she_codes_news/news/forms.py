@@ -11,7 +11,9 @@ class StoryForm(ModelForm):
 #             'pub_date': forms.DateInput(format=('%m/%d/%Y'),
 # attrs={'class':'form-control', 'placeholder':'Select a date',
 # 'type':'date'}),
-
 # }
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['pub_date'].initial = timezone.now().strftime("%Y-%m-%dT%H:%M")
   
   
