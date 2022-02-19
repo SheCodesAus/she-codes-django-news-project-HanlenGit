@@ -31,14 +31,14 @@ class NewsStory(models.Model):
     class Meta:
         ordering = ['-pub_date']
 
-    # categories = (
-    #     ('NEWS', 'News'),
-    #     ('PROGRAM', 'Program'),
-    #     ('ANNOUNCEMENTS', 'Announcements'),
-    #     ('CAREERS', 'Careers'),
-    # )
+    categories = (
+        ('NEWS', 'News'),
+        ('PROGRAM', 'Program'),
+        ('ANNOUNCEMENTS', 'Announcements'),
+        ('CAREERS', 'Careers'),
+    )
 
-    # category = models.CharField(max_length=200, choices = categories, default='news')
+    category = models.CharField(max_length=200, choices = categories, default='news')
 
 
 class ProjectProfile(models.Model):
