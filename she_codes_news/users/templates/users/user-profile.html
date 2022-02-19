@@ -8,26 +8,31 @@
 
 {% block content %}
 
-<div>
-    <h2>Author Profile</h2>
-    <img href='#'>image to be added</img>
-    <p> lots of stuff about the author that they want to share with the public.
-    </p>
-    <button>Message Author</button>
-
-
+<div style="display: flex">
+    <h4> Author Profile<h4>
+    <img src="{% static '/news/images/placeholder-5.jpg' %}">
+        <div style="font: small">
+            <h4> Profession: Maltese Poddle</h4>
+            <h4> Employer: No Puppy Farm Inc</h4>
+            <h4> Educational History: K9 Training</h4>
+            <h4>Programing Expertise: Django</h4>
+            <h4>She Codes Program: Pup Plus</h4>
+        </div>
 </div>
+<br>
+<br>
+<br>
     
+<div style="display: flex">
     <h3>Author Stories</h3>
-
-<div id="all-stories">
-        {% if all_stories %}
-            {% for story in all_stories %}
-            {% include "news/storyCard.html" with story=story %}
-            {% endfor %}
-        {% else %}
-            <p>No stories are available.</p>
-        {% endif %}
-</div>
-
+        <div id="all-stories">
+                {% if all_stories %}
+                    {% for story in all_stories %}
+                    {% include "news/storyCard.html" with story=story %}
+                    {% endfor %}
+                {% else %}
+                    <p>No stories are available.</p>
+                {% endif %}
+        </div>
+    </div>
 {% endblock %}

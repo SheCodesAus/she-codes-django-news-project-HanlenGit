@@ -3,7 +3,10 @@ from django.contrib.auth import get_user_model
 from django.db import models
 
 
-
+class Category(models.Model):
+    name = models.CharField(max_length=24, unique=True)
+    def __str__(self):
+        return self.name
 
 class NewsStory(models.Model):
     title = models.CharField(max_length=200)
@@ -17,17 +20,25 @@ class NewsStory(models.Model):
     content = models.TextField()
     image = models.URLField(null=True, blank=True)
 
+    categories = models.ForeignKey(
+        Category,
+        blank=True, null=True, 
+        on_delete=models.SET_NULL, 
+        related_name="stories"
+
+    )
+
     class Meta:
         ordering = ['-pub_date']
 
-    categories = (
-        ('NEWS', 'News'),
-        ('PROGRAM', 'Program'),
-        ('ANNOUNCEMENTS', 'Announcements'),
-        ('CAREERS', 'Careers'),
-    )
+    # categories = (
+    #     ('NEWS', 'News'),
+    #     ('PROGRAM', 'Program'),
+    #     ('ANNOUNCEMENTS', 'Announcements'),
+    #     ('CAREERS', 'Careers'),
+    # )
 
-    category = models.CharField(max_length=200, choices = categories, default='news')
+    # category = models.CharField(max_length=200, choices = categories, default='news')
 
 
 class ProjectProfile(models.Model):

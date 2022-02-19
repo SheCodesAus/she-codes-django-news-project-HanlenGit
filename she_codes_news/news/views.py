@@ -20,6 +20,7 @@ class IndexView(generic.ListView):
         context = super().get_context_data(**kwargs)
         context['latest_stories'] = NewsStory.objects.all()[:3]
         context['all_stories'] = NewsStory.objects.all()
+        
         return context
 
 
