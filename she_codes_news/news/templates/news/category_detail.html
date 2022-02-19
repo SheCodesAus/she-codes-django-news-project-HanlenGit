@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block stylesheets %}
+    <link rel='stylesheet' type="text/css" href="{% static 'news/styles.css' %}">
+{% endblock %}
+
+{% block content %}
+
+
+{{ category }}
+
+<div style="display: flex">
+    <h3>Category Stories</h3>
+        <div id="all-stories">
+                {% if all_stories %}
+                    {% for story in all_stories %}
+                    {% include "news/storyCard.html" with story=story %}
+                    {% endfor %}
+                {% else %}
+                    <p>No stories are available.</p>
+                {% endif %}
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,7 +1,8 @@
 from re import template
+from unicodedata import name
 from django.views import generic
 from django.urls import reverse_lazy
-from .models import NewsStory
+from .models import Category, NewsStory
 from .forms import StoryForm
 from django.views.generic.edit import DeleteView
 from users.models import CustomUser
@@ -20,8 +21,13 @@ class IndexView(generic.ListView):
         context = super().get_context_data(**kwargs)
         context['latest_stories'] = NewsStory.objects.all()[:3]
         context['all_stories'] = NewsStory.objects.all()
+        context['categories'] = Category.objects.all()
         
         return context
+
+class CategoryView(generic.DetailView):
+    model = Category
+    slug_field = 'name'
 
 
 class StoryView(generic.DetailView):

@@ -10,4 +10,5 @@ urlpatterns = [
     path('<int:pk>/delete', StoryDeleteView.as_view(), name='delete'),
     path('<int:pk>/update', StoryEditView.as_view(), name='updateStory'),
     path('add-story/', views.AddStoryView.as_view(), name='newStory'),
+    path('category/<str:slug>/', views.CategoryView.as_view(), name='category'), 
 ]
