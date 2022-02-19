@@ -10,14 +10,19 @@
 
 <div class="profile-container">
     <h2 class="profile-header">My Profile</h2>
-    <img href='#'>image to be added</img>
-    <p> lots of stuff about yourself that you want to share on the public profile page
+    <img class="img-container" href='#'>
+        {% if author.image %}
+            <img src="{{ author.image }}">
+        {% else %}
+            <img src="https://picsum.photos/600">
+        <p> lots of stuff about yourself that you want to share on the public profile page
         We will also make this functional to update as well.
-    </p>
-    <button>Update Profile</button>
-
-
+        </p>
 </div>
+ <div>       
+    <button>Update Profile</button>
+ </div>
+
     
     <h3>Your Stories</h3>
 
