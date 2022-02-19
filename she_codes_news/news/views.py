@@ -47,15 +47,16 @@ class StoryDeleteView(DeleteView):
             raise PermissionDenied()
         return super().form_valid(form)
 
-# class StoryEditView(UpdateView):
-#     model = NewsStory
-#     success_url = reverse_lazy('news:index')
-#     template = 'news/newsstory_confirm_edit.html'
+class StoryEditView(UpdateView):
+    model = NewsStory
+    success_url = reverse_lazy('news:index')
+    template = 'news/newsstory_confirm_edit.html'
+    fields = "__all__"
 
-#     def form_valid(self, form):
-#         if self.object.author != self.request.user:
-#             raise PermissionDenied()
-#         return super().form_valid(form)
+    def form_valid(self, form):
+        if self.object.author != self.request.user:
+            raise PermissionDenied()
+        return super().form_valid(form)
 
 
 
