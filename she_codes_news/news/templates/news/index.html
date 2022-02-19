@@ -10,7 +10,7 @@
     
     <h3>Latest News</h3>
 
-    <div class="wrapper" id="latest-stories">
+    <div id="latest-stories">
         {% if latest_stories %}
             {% for story in latest_stories %}
             {% include "./storyCard.html" with story=story position=forloop.counter %}
@@ -23,7 +23,7 @@
 
     <a class="new-story" href="{% url 'news:newStory' %}"><Button><bold>Write New Story</bold><button></a>
     
-    <div class="wrapper" id="all-stories">
+    <div id="all-stories">
         {% if all_stories %}
             {% for story in all_stories %}
             {% include "./storyCard.html" with story=story %}

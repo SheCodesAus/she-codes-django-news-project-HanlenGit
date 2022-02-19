@@ -1,20 +1,16 @@
-
-<div class="row">
-    <div class="column"
-        <div class="story-card" id="story-card-{{ position }}">
-            <a href="{% url 'news:story' story.id %}">
-                {% if story.image %}
-                    <img src="{{ story.image }}">
-                {% else %}
-                    <img src="https://picsum.photos/600">
-                {% endif %}
-                <div class="story-card-text">
-                    <h3>{{ story.title }}</h3>
-                    <h4>{{ story.pub_date }}</h4>
-            </a>
-                <a href="{% url 'users:user-profile' story.author.id %}">
-                    <h6 class="author-header">{{ story.author }}</h6>
-                </a>
+<div class="story-card" id="story-card-{{ position }}">
+    <a href="{% url 'news:story' story.id %}">
+        {% if story.image %}
+            <img src="{{ story.image }}">
+        {% else %}
+            <img src="https://picsum.photos/600">
+        {% endif %}
+        <div class="story-card-text">
+            <h3>{{ story.title }}</h3>
+            <h4>{{ story.pub_date }}</h4>
+        </a>
+        <a href="{% url 'users:user-profile' story.author.id %}">
+            <h6 class="author-header">{{ story.author }}</h6>
+        </a>
         </div>
-    </div>
- </div>
+</div>
