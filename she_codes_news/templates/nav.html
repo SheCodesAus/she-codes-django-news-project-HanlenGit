@@ -2,5 +2,8 @@
     <ul>
         <li><a href="{% url 'news:index' %}">Home</a>
         <li><a href="{% url 'users:createAccount' %}">Create Account</a>
-        <li><a href="{% url 'news:index' %}">Stories</a>
+        <li><a href="{% url 'news:category' 'News' %}">News</a>
+        <li><a href="{% url 'news:category' 'Program' %}">Program</a>
+        <li><a href="{% url 'news:category' 'Announcements' %}">Announcements</a>
+        <li><a href="{% url 'news:category' 'Careers' %}">Careers</a>
 </nav>
