@@ -16,3 +16,6 @@ Functioning features as per project guidelines are:
 -Click on the author of any story and it will take you to all of Authors Stories
 -If you are not logged in and try to write a new story (image attached).
 
+Learnings:
+I need to work on styling, classes etc. 
+The logic of classes and def are so much clearer now.
