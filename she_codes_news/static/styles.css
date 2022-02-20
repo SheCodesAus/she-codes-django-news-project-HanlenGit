@@ -208,14 +208,14 @@ h3 {
 h4 {
     color: rgb(233, 52, 250);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: larger;
+    font-size: auto;
     margin-top: -1px;
 }
 
 .author-header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
-    font-size: x-large;
+    font-size: auto;
     margin-top: 0;
     color: #8246af;
 }
