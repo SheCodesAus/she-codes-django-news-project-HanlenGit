@@ -119,27 +119,6 @@ header {
     justify-content: center;
 }
 
-/* .category-container {
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    height: auto;
-    flex-wrap: wrap;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-}
-.category-header {
-    padding: 10px;
-    color: #8246af;
-    justify-content: center;
-}
-
-.category-content {
-    text-align: justify;
-} */
-
 .form-section {
     position: relative;
     margin: 8% auto;
