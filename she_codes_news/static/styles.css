@@ -133,7 +133,7 @@ header {
 .category-header {
     padding: 10px;
     color: #8246af;
-    float: left;
+    justify-content: center;
 }
 
 .category-content {
