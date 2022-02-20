@@ -9,7 +9,7 @@
 {% block content %}
 
 <h3>Author Stories</h3>
-<div class="al-container-stories">
+<div>
         {% if all_stories %}
             {% for story in all_stories %}
             {% include "news/storyCard.html" with story=story %}
@@ -17,6 +17,5 @@
         {% else %}
             <p>No stories are available.</p>
         {% endif %}
-     </div>
 </div>
 {% endblock %}
