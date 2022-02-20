@@ -126,6 +126,7 @@ header {
     width: 80%;
     height: auto;
     flex-wrap: wrap;
+    position: relative;
 }
 .category-header {
     padding: 10px;
