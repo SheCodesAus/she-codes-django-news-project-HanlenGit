@@ -5,7 +5,7 @@ from .views import StoryDeleteView, StoryEditView
 app_name = 'news'
 
 urlpatterns = [
-    path('', views.IndexView.as_view(), name='index'),
+    path('news/', views.IndexView.as_view(), name='index'),
     path('<int:pk>/', views.StoryView.as_view(), name='story'),
     path('<int:pk>/delete', StoryDeleteView.as_view(), name='delete'),
     path('<int:pk>/update', StoryEditView.as_view(), name='updateStory'),
