@@ -28,6 +28,7 @@ class IndexView(generic.ListView):
 class CategoryView(generic.DetailView):
     model = Category
     slug_field = 'name'
+    
 
 
 class StoryView(generic.DetailView):
