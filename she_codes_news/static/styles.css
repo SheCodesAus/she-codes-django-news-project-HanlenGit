@@ -199,8 +199,10 @@ h3 {
     margin: 0;
     color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 20px, 20px;
-
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
 }
 
 h4 {
@@ -234,8 +236,6 @@ h4 {
 
 .form-item {
     color: whitesmoke;
-
-
 }
 
 nav {
