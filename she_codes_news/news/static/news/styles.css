@@ -19,6 +19,7 @@
     width: 30%;
     height: auto;
     display: block;
+    background-color: aliceblue;
 }
 .story-card img {
     width: 100%;
