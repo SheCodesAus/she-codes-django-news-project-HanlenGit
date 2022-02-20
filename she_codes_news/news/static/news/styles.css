@@ -1,10 +1,10 @@
 .container-stories {
     display: flex; 
-    justify-content: space-evenly;
-    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
     height: auto;
     flex-wrap: wrap;
-    padding: 40px, 20px;
 }
 
 .story-card {
@@ -22,6 +22,5 @@
 
 #story-content {
     text-align: justify;
-    position: relative;
 }
 
