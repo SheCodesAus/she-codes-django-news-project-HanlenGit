@@ -33,12 +33,10 @@
     display: flex; 
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: auto;
     height: auto;
     flex-wrap: wrap;
-    flex: 200px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0 2px 16px #8246af(0, 0, 0, 0.6);
 }
