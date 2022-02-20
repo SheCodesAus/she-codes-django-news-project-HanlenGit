@@ -18,11 +18,12 @@
     padding: 5px; 
     width: 200px;
     height: 300px;
-    display: block;
+    display: block, flex;
     object-fit: cover;
     overflow: hidden;
     float: center;
     background-color: aliceblue;
+    box-sizing: border-box;
 
 }
 .story-card img {
