@@ -21,7 +21,7 @@ class IndexView(generic.ListView):
         context = super().get_context_data(**kwargs)
         context['latest_stories'] = NewsStory.objects.all()[:3]
         context['all_stories'] = NewsStory.objects.all()
-        context['category'] = Category.objects.all()
+        context['categories'] = Category.objects.all()
         
         return context
 
@@ -29,8 +29,6 @@ class CategoryView(generic.DetailView):
     model = Category
     slug_field = 'name'
     
-
-
 class StoryView(generic.DetailView):
     model = NewsStory
     template_name = 'news/story.html'

@@ -25,20 +25,19 @@ class NewsStory(models.Model):
         blank=True, null=True, 
         on_delete=models.SET_NULL, 
         related_name="stories"
-
     )
 
     class Meta:
         ordering = ['-pub_date']
 
-    categories = (
-        ('NEWS', 'News'),
-        ('PROGRAM', 'Program'),
-        ('ANNOUNCEMENTS', 'Announcements'),
-        ('CAREERS', 'Careers'),
-    )
+    # categories = (
+    #     ('NEWS', 'News'),
+    #     ('PROGRAM', 'Program'),
+    #     ('ANNOUNCEMENTS', 'Announcements'),
+    #     ('CAREERS', 'Careers'),
+    # )
 
-    category = models.CharField(max_length=200, choices = categories, default='news')
+    # category = models.CharField(max_length=200, choices = categories, default='news')
 
 
 class ProjectProfile(models.Model):

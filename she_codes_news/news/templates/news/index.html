@@ -11,9 +11,10 @@
     <h3>Latest News</h3>
 
 <div class="container-stories">
-    {% if latest_stories %} {% for story in latest_stories %}
-    {% include "./storyCard.html" with story=story position=forloop.counter %}
-    {% endfor %}
+    {% if latest_stories %} 
+        {% for story in latest_stories %}
+        {% include "./storyCard.html" with story=story position=forloop.counter %}
+        {% endfor %}
     {% else %}
         <p>No stories are available.</p>
     {% endif %}
