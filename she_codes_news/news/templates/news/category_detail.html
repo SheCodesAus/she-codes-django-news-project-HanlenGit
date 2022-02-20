@@ -8,19 +8,17 @@
 {% block content %}
 
 
-{{ category }}
-
-<div style="display: flex">
-    <h3>Category Stories</h3>
-        <div id="all-stories">
-                {% if category.stories.all %}
-                    {% for story in category.stories.all %}
-                    {% include "news/storyCard.html" with story=story %}
-                    {% endfor %}
-                {% else %}
-                    <p>No stories are available.</p>
-                {% endif %}
-        </div>
+<div class="category-container">
+    <h3 class="category-header">{{ category }}</h3>
+     <div class="category-content" id="all-stories">
+        {% if category.stories.all %}
+            {% for story in category.stories.all %}
+            {% include "news/storyCard.html" with story=story %}
+            {% endfor %}
+        {% else %}
+            <p>No stories are available.</p>
+        {% endif %}
     </div>
+</div>
 
 {% endblock %}

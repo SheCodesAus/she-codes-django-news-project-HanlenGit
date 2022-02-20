@@ -103,11 +103,10 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }
-  
+
 body {
     background-color: white;
 }
-
 
 header {
     display: flex;
@@ -120,6 +119,22 @@ header {
     justify-content: center;
 }
 
+.category-container {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    flex-wrap: wrap;
+}
+.category-header {
+    padding: 10px;
+    color: #8246af;
+}
+
+.category-content {
+    text-align: justify;
+}
 
 .form-section {
     position: relative;
@@ -222,7 +237,12 @@ nav {
     flex-basis: 20%;
     display: inline;
     align-items: center;
+    justify-content: flex-start;
 
+}
+nav text {
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
 }
 
 ul {
@@ -272,3 +292,4 @@ a, p {
     height: 300px;
     object-fit: cover
 }
+

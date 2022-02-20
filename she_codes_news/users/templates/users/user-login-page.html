@@ -8,9 +8,9 @@
 
 {% block content %}
 
-<div class="profile-container">
+<div class="container-stories">
     <h2 class="profile-header">My Profile</h2>
-    <img class="img-container" href='#'>
+    <img href='#'>
         {% if author.image %}
             <img src="{{ author.image }}">
         {% else %}
@@ -26,7 +26,7 @@
     
     <h3>Your Stories</h3>
 
-<div id="all-stories">
+<div class="container-stories">
         {% if all_stories %}
             {% for story in all_stories %}
             {% include "news/storyCard.html" with story=story %}

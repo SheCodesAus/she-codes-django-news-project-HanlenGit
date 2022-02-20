@@ -7,15 +7,10 @@
 {% endblock %}
 
 {% block content %}
-    
-{% comment %} {% if categories %}
-    {% for cat in categories%}
-        {{ cat.name }}
-        {% endfor %} {% endif %} {% endcomment %}
 
     <h3>Latest News</h3>
 
-    <div id="latest-stories">
+    <div class="container-stories">
         {% if latest_stories %}
             {% for story in latest_stories %}
             {% include "./storyCard.html" with story=story position=forloop.counter %}
@@ -26,9 +21,9 @@
         
     </div>
 
+    <h3>All News</h3>
     
-    
-    <div id="all-stories">
+    <div class="container-stories">
         {% if all_stories %}
             {% for story in all_stories %}
             {% include "./storyCard.html" with story=story %}
