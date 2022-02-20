@@ -5,6 +5,7 @@
     width: 80%;
     height: auto;
     flex-wrap: wrap;
+    flex: 200px;
 }
 
 .story-card {
