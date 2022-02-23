@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 
 <html lang="en">
@@ -5,21 +6,35 @@
         <meta charset="utf-8">
         <title>She Codes News</title>
         <meta name="description" content="">
-        <meta name="author" content="Hayley van Waas">
+        <meta name="author" content="Sandra Hanlen">
         <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="">
+        <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+        {% block stylesheets %}{% endblock %}
     </head>
 
     <body>
         <header>
             <div id="header-text">
                 <a id="header-link" href="{% url 'news:index' %}">
-                    <h1>She {Codes} News</h1>
+                    <h1>She <span style="color: #FFA300">{Codes}</span> News</h1>
                 </a>
             </div>
-            <!-- include nav here -->
+            <div>
+                {% if request.user.is_authenticated %}
+                    <a href="#">{{ user.username }}</a>
+                    <a href="{% url 'logout' %}">Logout</a>
+                {% else %}
+                    <a href="{% url 'login' %}">Sign In</a>
+                {% endif %}
+            </div>
         </header>
 
-        <!-- content blocks here -->
+        {% include "./banner.html" %}
+        <nav>
+        {% include './nav.html' %}<!-- include nav here -->
+        </nav>
+
+        {% block content %}{% endblock %}   <!-- content blocks here -->
     </body>
+    
 </html>

@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block stylesheets %}
+<link rel="stylesheet" type="text/css" href="{% static 'news/styles.css' %}">
+
+{% endblock %}
+
+{% block content %}
+
+<div class="container-stories">
+    <h2 class="profile-header">My Profile</h2>
+    <img href='#'>
+        {% if author.image %}
+            <img src="{{ author.image }}">
+        {% else %}
+            <img src="https://picsum.photos/600">
+        <p> lots of stuff about yourself that you want to share on the public profile page
+        We will also make this functional to update as well.
+        </p>
+</div>
+ <div>       
+    <button>Update Profile</button>
+ </div>
+
+    
+    <h3>Your Stories</h3>
+
+<div class="container-stories">
+        {% if all_stories %}
+            {% for story in all_stories %}
+            {% include "news/storyCard.html" with story=story %}
+            {% endfor %}
+        {% else %}
+            <p>No stories are available.</p>
+        {% endif %}
+        
+        <form method="post">{% csrf_token %}
+            <p>Are you sure you want to delete "{{ object }}"?</p>
+            {{ form }}
+            <input type="submit" value="Confirm">
+        </form>
+</div>
+
+
+<a href="{% url 'news:newStory' %}"><button>Write New Story</button></a>
+    
+{% endblock %}

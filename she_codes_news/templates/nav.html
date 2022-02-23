@@ -1,6 +1,10 @@
 <nav>
-    <a href="{% url 'news:index' %}">Home</a>
-    <a href="#">username</a>
-    <a href="#">Logout</a>
-    <a href="#">Login</a>
+    <ul>
+        <li><a href="{% url 'news:index' %}">Home</a>
+        <li><a href="{% url 'news:category' 'News' %}">News</a>
+        <li><a href="{% url 'news:category' 'Program' %}">Program</a>
+        <li><a href="{% url 'news:category' 'Announcements' %}">Announcements</a>
+        <li><a href="{% url 'news:category' 'Careers' %}">Careers</a>
+        <li><a href="{% url 'users:createAccount' %}">Create Account</a>
+        <li><a href="{% url 'news:newStory' %}">Write New Story</a>
 </nav>
