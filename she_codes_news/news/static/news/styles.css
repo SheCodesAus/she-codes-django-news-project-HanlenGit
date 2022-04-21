@@ -28,7 +28,8 @@
 
 }
 .story-card img {
-    width: 100%;
+    width: 80%;
+    border-radius: 15px 50px 30px 5px;
     object-fit: fill; 
 } 
 
