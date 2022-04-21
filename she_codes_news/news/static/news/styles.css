@@ -48,3 +48,35 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+@media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  
+    .img {
+      width: 100%;
+      height: 100%;
+    }
+    #middle-text {
+      width:100%
+    }
+  }
+  
+  @media (min-width: 500px) {
+    .column1 .column2 .column3 {
+      display: inline-block;
+      width: 44%;
+    }
+  
+    .img {
+      width: 44%;
+    }
+  
+    #middle-text {
+      width: 44%;
+      text-overflow: initial;
+    }
+  
+  }
