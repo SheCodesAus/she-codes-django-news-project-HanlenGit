@@ -117,6 +117,7 @@ header {
 }
 .header-text {
     justify-content: center;
+    text-align: center;
 }
 
 .form-section {
@@ -167,6 +168,7 @@ h1 {
     color: #8246af;
     display: middle;
     text-align: center;
+    justify-content: center;
 }
 
 h2 {
