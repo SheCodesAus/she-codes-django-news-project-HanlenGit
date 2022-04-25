@@ -10,6 +10,7 @@
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 2px 16px #8246af(0, 0, 0, 0.6);
+    background-color: pink;
 }
 
 .story-card {
@@ -32,7 +33,6 @@
     border-radius: 15px;
     object-fit: fill; 
     margin-left: auto;
-    position: relative;
     justify-content: center;
 } 
 
@@ -55,6 +55,7 @@
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    background-color: wheat;
 }
 
 @media screen and (max-width: 650px) {
