@@ -32,11 +32,17 @@
     border-radius: 15px;
     object-fit: fill; 
     margin-left: auto;
+    position: relative;
+    justify-content: center;
 } 
 
 #story-content {
     text-align: justify;
-    margin: 
+    margin-top: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+
 }
 
 .al-container-stories {
