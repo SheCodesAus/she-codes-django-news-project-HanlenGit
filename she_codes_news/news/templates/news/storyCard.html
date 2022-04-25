@@ -8,7 +8,9 @@
         <a class="story-card-text">
             <h3>{{ story.title }}</h3>
             <h4>{{ story.pub_date }}</h4>
-        </a>
         <a href="{% url 'users:user-profile' story.author.id %}">
-            <h6 class="author-header">{{ story.author }}</h6>
+                <h6 class="author-header">{{ story.author }}</h6>
+        </a>
+        </a>
+
 </div>
