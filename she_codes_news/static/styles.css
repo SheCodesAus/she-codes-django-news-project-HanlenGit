@@ -211,6 +211,10 @@ h6 {
     font-size: auto;
     margin-top: 0;
     color: #8246af;
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-left: 20px;
 }
 #header-text {
     flex-basis: 80%;
