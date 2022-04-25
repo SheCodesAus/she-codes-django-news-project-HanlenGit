@@ -15,7 +15,7 @@
 .story-card {
     margin: 2px;
     border: 1px solid #000;
-    border-radius: 15px 50px 30px 5px;
+    border-radius: 15px;
     padding: 5px; 
     width: 200px;
     height: 300px;
@@ -28,8 +28,8 @@
 
 }
 .story-card img {
-    width: 80%;
-    border-radius: 15px 50px 30px 5px;
+    width: 90%;
+    border-radius: 15px;
     object-fit: fill; 
     margin-left: auto;
 } 
